@@ -1,23 +1,11 @@
 <!DOCTYPE html>
 <head>
-<title>{Title} / about</title>
+<title>{Personal Profile} / Phannavy</title>
 
 <link rel="shortcut icon" href="{Favicon}">
 <link rel="alternate" type="application/rss+xml" href="{RSS}">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<!---
-    
-    HYACINTH ABOUT PAGE BY SEYCHE.TUMBLR.COM
-    
-    CREDITS:
-    -feather icons by Cole Bemis
-	-icons from fontawesome
-    -tippy.js tooltips by atomiks
-    (full list of credits @ seyche.tumblr.com/credits)
-    
---->
 
 <link href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Barlow:ital,wght@0,400;0,700;1,400;1,700&family=Karla:ital,wght@0,400;0,700;1,400;1,700&family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Lora:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Public+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
@@ -37,7 +25,7 @@
     
     /*----- colours -----*/
     
-    --background: #f0f0f0;
+    --background: #89cff0;
     --content-background: #fff;
     --text: #575757;
     --links: #8c8c8c;
