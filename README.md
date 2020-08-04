@@ -773,7 +773,7 @@ article .title {
     
         <!--- by default, your blog icon shows up in the sidebar. to change it, replce {PortraitURL-128} below with the url of whatever image you want. --->
         
-        <img src="{PortraitURL-128}" class="icon"/>
+        <img src="{https://drive.google.com/file/d/1Y0qbIeCh5619lbtFqfqkd7qWlGVgTby7/view?usp=sharing}" class="icon"/>
         <div class="ui-icon" id="status-icon"><i data-feather="user" aria-hidden="true"></i></div>
         
     </div>
