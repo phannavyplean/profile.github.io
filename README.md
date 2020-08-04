@@ -780,7 +780,7 @@ article .title {
     
     <!--- sidebar title --->
         
-    <div class="title">about</div>
+    <div class="title">it me</div>
     
     <!--- sidebar links: to change the icons, go to feathericons.com and change the name of the icon below to whatever icon you want --->
         
