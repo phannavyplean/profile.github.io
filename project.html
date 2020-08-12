@@ -1,0 +1,1076 @@
+<!DOCTYPE html>
+<head>
+<title>{Project} / Phannavy</title>
+
+<link rel="shortcut icon" href="{Favicon}">
+<link rel="alternate" type="application/rss+xml" href="{RSS}">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!---
+
+    NARCISSUS NAVIGATION PAGE BY SEYCHE.TUMBLR.COM
+
+    CREDITS:
+    -feather icons by Cole Bemis
+    -tippy.js tooltips by atomiks
+
+--->
+
+<link href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Barlow:ital,wght@0,400;0,700;1,400;1,700&family=Karla:ital,wght@0,400;0,700;1,400;1,700&family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Lora:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Public+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script src="https://unpkg.com/feather-icons"></script>
+
+<style type="text/css">
+
+/*----- START EDITING HERE -----*/
+
+/*----- VARIABLES: EDIT THIS SECTION!!!! -----*/
+npm install feather-icons{
+}
+:root {
+
+    /*----- colours: change the hex codes below to whatever you want -----*/
+
+    --background: #a2a2d0;
+    --content-background: #fff;
+    --text: #575757;
+    --links: #8c8c8c;
+    --title: #212121;
+    --borders: #e0e0e0;
+    --accent: #9fa8da;
+    --gradient-1: #7986cb;
+    --gradient-2: #e1bee7;
+    --icon-background: #f5f6ff;
+    --link-background: #f5f5f5;
+
+    /*----- font styling -----*/
+
+    --body-font: 'Public Sans', sans-serif;
+    --font-size: 14px;
+
+    /*----- body styling -----*/
+
+    --content-corners: 10px;
+    --drop-shadows: 1px 1px 3px var(--borders),
+                -1px 1px 3px var(--borders); /*----- change this to "none" to get rid of the drop shadows -----*/
+
+}
+
+/*----- END VARIABLES: you don't need to edit the css after here -----*/
+
+@keyframes lazyload {
+    0%   {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@-webkit-keyframes lazyload {
+    0%   {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@-moz-keyframes lazyload {
+    0%   {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@-o-keyframes lazyload {
+    0%   {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+body {
+    font-family: var(--body-font);
+    font-size: var(--font-size);
+    color: var(--text);
+    background-color: var(--background);
+    text-align: left;
+    line-height: 160%;
+    word-wrap: break-word;
+    letter-spacing: 0.2px;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    -webkit-animation: lazyload 2s;
+    -moz-animation: lazyload 2s;
+    -o-animation: lazyload 2s;
+    animation: lazyload 2s;
+}
+
+a {
+    color: var(--links);
+    text-decoration: none;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+a:hover {
+    color: var(--accent);
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+p a {border-bottom: 2px solid var(--accent);}
+
+blockquote {
+    padding: 0 0 0 1.25em;
+    border-left: 1px solid var(--borders);
+    margin: 1.25em 0 1.25em 1.25em;
+}
+
+h1, h2, h3, h4, h5, .title {
+    color: var(--title);
+    letter-spacing: 2px;
+    line-height: 160%;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, .title a {color: var(--title);}
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, .title a:hover {color: var(--accent);}
+h1, .title {font-size: 1.3em;}
+h2 {font-size: 1.25em;}
+h3 {font-size: 1.15em;}
+h4 {font-size: 1.1em;}
+h5 {font-size: 1em;}
+
+small {font-size: 0.9em;}
+big {font-size: 1.1em;}
+b, bold, strong {color: var(--title);}
+b a, bold a, strong a {color: var(--title);}
+b a:hover, bold a:hover, strong a:hover {color: var(--accent);}
+
+::-webkit-scrollbar {
+    width: 17px;
+    height: 17px;
+    background-color: var(--background);
+}
+
+::-webkit-scrollbar-track {border: 8px solid var(--background); background-color: var(--borders);}
+
+::-webkit-scrollbar-thumb {
+   border: 6px solid var(--background);
+   background-color: var(--title);
+   min-height: 24px;
+   min-width: 24px;
+}
+
+.tippy-tooltip.custom-theme {
+    background-color: var(--title);
+    color: var(--content-background);
+    text-align: center;
+    font-family: inherit;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    font-style: normal;
+    padding: 0.25em;
+    margin: 20px auto auto 10px;
+    font-size: 0.8em;
+}
+
+.tmblr-iframe-compact .tmblr-iframe--unified-controls {display: none;}
+
+#k {
+    text-align: center;
+    margin: 100px auto;
+}
+
+/*----- SIDEBAR -----*/
+
+#sidebar {
+    width: 250px;
+    text-align: center;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    box-sizing: border-box;
+    padding: 50px;
+    box-shadow: var(--drop-shadows);
+    background-color: var(--content-background);
+    overflow: hidden;
+}
+
+#sidebar .icon {
+    width: 80px;
+    height: 80px;
+    padding: 5px;
+    display: inline-block;
+}
+
+#side-icon {
+    background: linear-gradient(to bottom right, var(--gradient-1), var(--gradient-2));
+    border-radius: 50%;
+    padding: 5px;
+    display: inline-block;
+    margin-bottom: 1.25em;
+}
+
+#status-icon {
+    position: absolute;
+    margin: -16px auto auto 30px;
+    width: 20px;
+    height: 20px;
+    padding: 6px;
+    line-height: 20px;
+}
+
+#status-icon .feather {
+    width: 20px;
+    height: 20px;
+}
+
+#sidebar .title {display: block;}
+#description {margin-top: 1.5em;}
+
+#sidebar nav {
+    margin-top: 2.25em;
+    text-align: left;
+}
+
+#sidebar nav li {list-style-type: none; margin-bottom: 0.75em;}
+.nav-txt {float: right;}
+
+#sidebar nav a {
+    width: 100%;
+    display: block;
+    border-radius: 1.75em;
+    padding: 0.75em;
+    box-sizing: border-box;
+    background-color: var(--link-background);
+}
+
+#sidebar nav a .feather {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 1em;
+    width: 1.5em;
+    height: 1.5em;
+    color: var(--accent);
+}
+
+#sidebar nav a:hover {
+    background-color: var(--accent);
+    color: var(--content-background);
+    box-shadow: var(--drop-shadows);
+}
+
+#sidebar nav a:hover .feather {
+    color: var(--content-background);
+}
+
+/*----- COMMON -----*/
+
+.icon, article img {
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: middle;
+    background-color: var(--icon-background);
+}
+
+.icon-gradient {
+    background: linear-gradient(to bottom right, var(--gradient-1), var(--gradient-2));
+    border-radius: 50%;
+    padding: 3px;
+    display: inline-block;
+}
+
+article:not(:first-of-type) .icon-gradient {margin-right: 16px;}
+
+.ui-icon {
+    position: absolute;
+    background-color: var(--accent);
+    border-radius: 50%;
+    text-align: center;
+}
+
+.ui-icon .feather {color: var(--content-background);}
+
+a .feather {
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+a:hover .feather {
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.upper {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.9em;
+}
+
+.subtitle {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    color: #212121;
+    margin-bottom: 0.5em;
+}
+
+/*----- CONTENT -----*/
+
+#container {
+    position: relative;
+    width: calc(99vw - 250px);
+    margin-left: 250px;
+}
+
+article {
+    width: 700px;
+    background-color: var(--content-background);
+    margin: 50px auto;
+    position: relative;
+    padding: 50px;
+    box-sizing: border-box;
+    border-radius: var(--content-corners);
+    box-shadow: var(--drop-shadows);
+}
+
+/*----- HEADER -----*/
+
+#extra-header .icon {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 3px;
+    width: 3.25em;
+    height: 3.25em;
+}
+
+.find svg {
+    width: 1.5em;
+    height: 1.5em;
+    float: right;
+    display: inline-block;
+    text-align: right;
+    color: var(--accent);
+}
+
+.find {
+    background-color: inherit;
+    width: calc(100% - 6.75em);
+    margin: auto auto auto 2em;
+    border: 1px solid var(--borders);
+    background-color: var(--link-background);
+    border-radius: 2em;
+    padding: 1em 1.5em;
+    box-sizing: border-box;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.find input {
+    border: none;
+    outline: none;
+    display: inline-block;
+    background: inherit;
+    margin: 0;
+    padding: 0;
+    color: {color:text};
+    width: calc(100% - 1.5em);
+    font-family: inherit;
+    font-size: inherit;
+}
+
+.find input[type=text] {color: var(--text);}
+input::-webkit-input-placeholder {color: var(--text);}
+input::-moz-placeholder {color: var(--text);}
+input:-moz-placeholder {color: var(--text);}
+input:-ms-input-placeholder {color: var(--text);}
+
+#header-nav {text-align: right; margin-top: 1.5em;}
+#header-nav a {margin-left: 1.5em; color: var(--accent);}
+#header-nav a .feather {width: 1.5em; height: 1.5em;}
+#header-nav a:hover .feather {color: var(--title);}
+
+/*----- TAGS -----*/
+
+article img {
+    width: 40px;
+    height: 40px;
+    padding: 3px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+article .ui-icon {
+    width: 16px;
+    height: 16px;
+    padding: 6px;
+    line-height: 16px;
+    margin: -24px auto auto 26px;
+}
+
+article .ui-icon .feather {
+    width: 16px;
+    height: 16px;
+}
+
+article .title {
+    display: inline-block;
+    font-size: 1.25em;
+}
+
+.links {
+    margin-top: 1.25em;
+    list-style-type: none;
+    line-height: 250%;
+}
+
+.links li {display: inline-block;}
+
+article li::after {
+    content: '';
+    width: 6px;
+    height: 6px;
+    background-color: var(--accent);
+    border-radius: 50%;
+    margin: 0 1.5em 0.15em 1.5em;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+article li:last-of-type::after {display: none;}
+
+article ul {margin: 0; padding: 0; display: inline-block;}
+
+.dropbutton {cursor: help;}
+
+.dropbutton .feather {
+    width: 1.25em;
+    height: 1.25em;
+    margin-left: 0.5em;
+    display: inline-block;
+    vertical-align: middle;
+    color: var(--accent);
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.upside .feather {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.dropdown {
+    position: absolute;
+    width: 150px;
+    z-index: 2;
+    background-color: var(--content-background);
+    border-radius: var(--content-corners);
+    box-shadow: var(--drop-shadows);
+    overflow: hidden;
+    margin-top: 0.5em;
+    line-height: 160%;
+    display: none;
+}
+
+.dropdown a {
+    border-bottom: 1px solid var(--borders);
+    padding: 0.5em 0.75em;
+    display: block;
+}
+
+.dropdown a::after {display: none;}
+
+.dropdown a:hover {
+    background-color: var(--accent);
+    color: var(--content-background);
+}
+
+/*---- MOBILE HEADER -----*/
+
+#mobile-header {
+    position: fixed;
+    z-index: 100;
+    padding: 1.75em 2em;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-sizing: border-box;
+    box-shadow: var(--drop-shadows);
+    background-color: var(--content-background);
+    display: none;
+}
+
+.menu-button {
+    display: inline-block;
+    cursor: help;
+    vertical-align: middle;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.menu-button .feather, .close a .feather {
+    color: var(--content-background);
+    width: 1.5em;
+    height: 1.5em;
+    background-color: var(--accent);
+    border-radius: 50%;
+    padding: 0.75em;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.menu-button:hover .feather, .close a:hover .feather {
+    background-color: var(--title);
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+#mobile-header .subtitle {
+    display: inline-block;
+    font-size: 1.15em;
+    margin-left: 1em;
+}
+
+#mobile-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mobile-controls a .feather {
+    width: 1.75em;
+    height: 1.75em;
+    -webkit-transition: all 0s;
+    -moz-transition: all 0s;
+    -ms-transition: all 0s;
+    -o-transition: all 0s;
+    transition: all 0s;
+}
+
+.mobile-controls a {margin-left: 1em;}
+
+.close {
+    display: none;
+    text-align: right;
+    margin-bottom: 1em;
+}
+
+.close a {cursor: help;}
+
+/*---- RESPONSIVENESS -----*/
+
+@media only screen and (max-width: 1100px) {
+    #mobile-header, .close {display: block;}
+
+    #sidebar {
+        left: -250px;
+        z-index: 9999;
+        -webkit-transition: ease-in-out 0.7s;
+        -moz-transition: ease-in-out 0.7s;
+        -ms-transition: ease-in-out 0.7s;
+        -o-transition: ease-in-out 0.7s;
+        transition: ease-in-out 0.7s;
+    }
+
+    #sidebar.show {left: 0;}
+
+    #container {
+        width: 100%;
+        margin: 150px auto 50px auto;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    article {width: 90vw;}
+    .dropdown {width: 120px;}
+}
+
+@media only screen and (max-width: 500px) {
+    article {
+        width: 100vw;
+        padding: 30px;
+        border-radius: 0;
+    }
+
+    #sidebar {width: 80vw; left: -80vw;}
+}
+
+</style>
+</head>
+
+<body>
+
+<!----- HEADER FOR MOBILE LAYOUT: do not edit this section ----->
+
+<header id="mobile-header">
+    <div id="mobile-flex">
+        <div id="mobile-left">
+            <div class="menu-button" title="open menu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></div>
+            <div class="subtitle">navigation</div>
+        </div>
+        <div class="mobile-controls">
+            <a href="https://www.tumblr.com/follow/{Name}" title="follow"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus-square"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line></svg></a>
+            <a href="https://www.tumblr.com/message/{Name}" title="message">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg></a>
+            <a href="https://www.tumblr.com/dashboard" title="dashboard"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-compass"><circle cx="12" cy="12" r="10"></circle><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon></svg></a>
+        </div>
+    </div>
+</header>
+
+<!----- ================================
+
+    SIDEBAR
+
+====================================== ----->
+
+<aside id="sidebar">
+
+    <!--- mobile close button: don't touch --->
+
+    <div class="close"><a title="close menu"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></a></div>
+
+    <!----- START EDITING HERE ----->
+
+    <div id="side-icon">
+
+        <!--- by default, your blog icon shows up in the sidebar. to change it, replce {PortraitURL-128} below with the url of whatever image you want. --->
+
+        <img src="https://pbs.twimg.com/media/EFKk9IDUUAAYUJj?format=jpg&name=large" class="icon"/>
+        <div class="ui-icon" id="status-icon"><i data-feather="tag" aria-hidden="true"></i></div>
+
+    </div>
+
+    <!--- sidebar title --->
+
+    <div class="title">menu</div>
+
+    <!--- sidebar description --->
+
+    <!---<div id="description">Write a description here, if you'd like, or delete this if you don't want it.</div>
+
+    <!--- sidebar links: to change the icons, go to feathericons.com and change the name of the icon below to whatever icon you want --->
+
+    <nav class="upper">
+
+        <li><a href="index.html">
+            <i data-feather="home"></i>
+            <svg class="feather">
+    <use xlink:href="path/to/dist/feather-sprite.svg#circle"/>
+  </svg>
+            <span class="nav-txt">home</span>
+        </a></li>
+        <li><a href="jobs.html">
+            <i data-feather="mail"></i>
+            <svg class="feather">
+  <use xlink:href="path/to/dist/feather-sprite.svg#circle"/>
+</svg>
+            <span class="nav-txt">ideal job</span>
+        </a></li>
+        <li><a href="tests.html">
+            <i data-feather="grid"></i>
+            <svg class="feather">
+  <use xlink:href="path/to/dist/feather-sprite.svg#circle"/>
+</svg>
+            <span class="nav-txt">tests</span>
+        </a></li>
+        <li><a href="project.html">
+            <i data-feather="star"></i>
+            <svg class="feather">
+  <use xlink:href="path/to/dist/feather-sprite.svg#circle"/>
+</svg>
+            <span class="nav-txt">Project Idea</span>
+        </a></li>
+
+    </nav>
+
+    <!---
+
+    adding more sidebar links:
+
+    copy and paste this template:
+
+    <li><a href="/">
+        <i data-feather="link"></i>
+        <span class="nav-txt">link/span>
+    </a></li>
+
+    and put it above "</nav>" in the space above. you can copy and paste as many times as you want,
+
+    --->
+
+</aside>
+
+<!----- ================================
+
+    END OF SIDEBAR
+
+====================================== ----->
+
+<!----- MAIN CONTENT ----->
+
+<section id="container">
+
+    <!----- ================================
+
+        HEADER
+
+    ====================================== ----->
+
+    <article id="extra-header">
+      <!---
+
+        <div class="icon-gradient">
+
+             <!--- this is your blog icon. to replace it, change {PortraitURL-128} to the url of the image you want. --->
+             <!--
+
+            <img src="https://pbs.twimg.com/media/EDi0ciwXsAAaCVK?format=jpg&name=medium" class="icon"/>
+
+        </div>
+        --->
+
+         <!--- search bar --->
+         <!---
+
+        <form action="/search" method="get" class="find" name="sform">
+            <input type="text" name="q" placeholder="Looking for something specific?" value="{SearchQuery}" value autocomplete="off"/>
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        </form>
+
+         <!---
+
+         header nav: by default, the links below redirect to your archive filters. if you have dedicated tags for certain post types, replace the urls below with your own tag urls.
+
+         if you want to get rid of this section, delete everything between and including <nav id="header-nav"></nav>.
+
+         --->
+         <p><h2>Overview</h2></p>
+         <p>An idea I had in mind for the project would be an application that is directed at assisting artists with anatomy and lighting references. The goal for this app is designed for artists to have the convenience of a reference tool to be accessible wherever they are, so long as they download the app; as well as having access to high quality 3D models that they can manipulate into their desired poses. Not only are users able to customise the poses of the models themselves, but they can also set up different lighting in the scenes to gain an almost realistic reference of how lighting and shadow work.
+         </p>
+         <p><h2> Motivation</h2></p>
+         <p>This project will be incredibly useful to have, as finding reference itself on the internet is quite a time-consuming process, not to mention having to find the exact photos to suit your ideal vision, to then start creating. With the tools intended to be designed in this program, it would not require the use and knowledge of how to use an advanced 3D program such as Autodesk's Maya - let alone earning the license to be able to access such a program, and it would greatly lessen the learning curve required to use a 3D modelling program as well as reduce the cost of time that is needed to begin drawing/modelling/sculpting.
+         </p>
+
+        <nav id="header-nav">
+
+        </nav>
+
+         <!--- end of header nav --->
+
+    </article>
+
+    <!----- END OF HEADER ----->
+
+
+    <!----- ================================
+
+        TAGS START HERE.
+
+    ====================================== ----->
+
+    <!---
+
+        ADDING TAG BOXES: copy and paste this template:
+
+        <article>
+
+            <div class="icon-gradient">
+                <img src="https://via.placeholder.com/40x40.png"/>
+            </div>
+            <div class="ui-icon"><i data-feather="tv"></i></div>
+
+            <div class="title">heading</div>
+
+            <div class="links">
+                <li><a href="/">link</a></li>
+                <li><a href="/">link</a></li>
+            </div>
+
+        </article>
+
+        when you paste it, MAKE SURE YOU DO NOT PASTE IT INTO ANOTHER TAG BOX.
+
+        ///////////////////////////////////////////////
+
+        ADDING LINKS:
+
+        to add new links, copy and paste this:
+
+        <li><a href="/">link</a></li>
+
+        as many times as you need.
+
+        ////////////////////////////////////////////////
+
+        ADDING DROPDOWNS: copy and paste this:
+
+        <li class="drop-wrap">
+            <a class="dropbutton">dropdown title<i data-feather="chevron-down"></i></a>
+                <div class="dropdown">
+                    <a href="/">dropdown link</a>
+                </div>
+        </li>
+
+        as many times as you need.
+
+    --->
+
+    <!----- ================================
+
+        TAG BOX ONE
+
+    ====================================== ----->
+
+    <article>
+
+        <!--- tag header icon: if you don't want this, delete it. --->
+
+        <!--- to change the icon below, go to feathericons.com and enter the name of the icon you want below. or, delete the line below to get rid of it. --->
+
+        <!--- tag box heading --->
+
+        <div class="title">Description</div>
+        <p>The 3D Models:
+        <br>High quality human models ideally with low-poly — the same kind used in a game's gameplay instead of the pre-rendered cutscenes models. The basic human models include a Male, Female and non-binary body, with two ages of either an Adult or a Child (for first phase of the app). There would also be a range of body types included with the models with the choice of a skinny, lean, curvy, overweight and muscular build. The model's skin colour is changeable, with a variety of hues to choose from. Basic household items, such as chairs, tables, cooking utensils are included in the 'v.01' app. As patches roll out for this app, there is a possible inclusion of adding either the elderly or infant phase of the human's age, as well as the inclusion of miscellanous items which are then categorised into 'themes', for example, fantasy-related objects (swords, shields, mage staff, etc.) to sci-fi items, etc.; Animals, Monsters and anthropomorphic models would also be a later addition to the app.
+      </br>
+          <br>The human models all come pre-rigged, so users just need to import them into the scene and begin moving the joints, setting up their desired lighting and taking screenshots. During the model selection stage, it functions like a Sim/Character creator but with only basic options. Since the idea is not for users to create their own personalised character per se, but to use these base models as reference (like the Body Kun mannequin doll figures)</br>
+          <li><a href="https://bodykun.com/products/body-kun-models-for-artists?gclid=CjwKCAjw97P5BRBQEiwAGflV6Ugt0UiHti6jZ4DKEeNbF3mOZk5zkkbkiC6jPnG8C18iOQokqZuOpBoC3F0QAvD_BwE">BodyKun</a></li>
+          </p>
+        <p>Pre-positioned poses:
+        <br>The app would include basic poses that have been pre-positioned and saved by the devs, so new users can get started right way. These poses would simply be quite generic such as sitting, holding objects, etc. which then act as a good foundation for users to base their own custom poses on. Users would not only be limited to controlling and manipulate the joint movements of the body/limbs but also the facial expressions, and positioning of the mouth.</br>
+        </p>
+        <p>The Lighting Tool:
+        <br>Users are able to add in as many lights as they want with the flexibility to control each of the light's hue, strength (how intense or soft the light — imitating either godrays, a spotlight, or ambient light), positioning in the scene as well as the angle it faces. For users with less knowledge of lighting, there will be options to select basic lighting types that have already been preset; such as basic three-point lighting, studio lighting and portrait lighting. The base source light (the sun) will always already be set in the scene with the option to disable it for night. Users will also be able to save their own lighting setups as a preset, to use whenever they want over a multitude of times.</br>
+      </p>
+      <p>Screenshot Tool:
+      <br>Another available tool is the ability to capture screenshots in the form of a jpeg or png. Users can freely move around the camera to any angle of their scene and take screenshots, which then can be exported/saved. Before saving their images, there will be an available option for them to select "save as transparent" - which gives them the choice to either remove the background scene, so only the model with the lighting rendered is shown. The purpose of this is so that users can easily import their photos into their desired editing program without the hassle of having to remove the background themselves.</br>
+    </p>
+    <p>The Scene:
+    <br>An empty, expansive space that acts as a background for users to place their models and lights in. This background will have almost transparent but still visible guidelines with a directional compass (X,Y,Z) to assist users in placing objects accurately in the scene.</br>
+  </p>
+
+        <!---
+
+        start your tags here. make sure to wrap your link blocks in <div class="links"></div>
+
+        --->
+
+        <!--- link block one --->
+        <!--
+
+        <div class="links">
+
+            <li><a href="/">link</a></li>
+
+            <!--- dropdown one --->
+            <!--- disabled this
+
+            <li class="drop-wrap">
+                <a class="dropbutton">dropdown title<i data-feather="chevron-down"></i></a>
+                    <div class="dropdown">
+                        <a href="/">dropdown link</a>
+                        <a href="/">dropdown link</a>
+                    </div>
+            </li>
+
+            <li><a href="/">link</a></li>
+
+        </div>
+      -->
+
+        <!--- link block two --->
+        <!---
+
+        <div class="links">
+
+            <!--- subheading --->
+            <!---
+
+            <div class="subtitle">sub heading</div>
+
+            <li><a href="/">link</a></li>
+            <li><a href="/">link</a></li>
+
+        </div>
+        --->
+
+    </article>
+
+    <!----- ================================
+
+        END OF TAG BOX ONE
+
+    ====================================== ----->
+
+    <!----- ================================
+
+        START OF TAG BOX TWO
+
+    ====================================== ----->
+
+    <article>
+
+        <!--- tag header icon --->
+        <!---
+
+        <div class="icon-gradient">
+            <img src="https://via.placeholder.com/40x40.png"/>
+        </div>
+        <div class="ui-icon"><i data-feather="map"></i></div>
+
+        <!--- tag box heading --->
+
+        <div class="title">Tools, Technologies, Skills</div>
+
+        <!---- box info write all down here -->
+        <p> Initially the intention was for only the developers and collaborating artists to be able to import 3D models in, so the required software for them would have to create such models would be the 3D program of their choosing — could range from Autodesk Maya, 3DSMax, Z-Brush to using an open source one such as Blender. For the more industry standard 3D software, having a semi-powerful computer(at the least) is required to render those models without issues. Developers and designers would require the use of their preferred software for application creation and editing tools, whereas users need to at least have the latest versions of Windows or IOS on a computer to use the application, and preferable on Apple and Android phones as well.
+        </p>
+
+        <div class="subtitle">Skills Required</div>
+        <p>> <b>Programming language knowledge</b> — for developers of this app to write the correct code to execute the actions required in making the mechanics function properly.
+        </p>
+          <p>> <b>Design knowledge</b> — developers need to be able to create the UI elements in a minimalistic and straight-forward way so that it's easier for users to navigate through, encouraging them to learn how to use the app quicker and without too much difficulty compared to learning how to use an actual 3D modelling program. The overall design of the app has to be clean, neatly organised and aesthetically pleasing to the eye.</p>
+          <p>> <b>3D Modelling Skills</b> — for the devs/artists collaborating with the developers, they must know how to create and sculpt 3D models from high-poly to low-poly, rig said models with the appropriate joints and skin them properly without breaking the mesh.</p>
+          <p>> <b>Intermediate/Expert knowledge of Anatomy</b> — required of the artists, as this is what serves as the foundation for users to who have limited knowledge on anatomy.</p>
+          <p>> <b>Thorough knowledge on Lighting and Colour Theory</b> — this applies more so to the developers/designers, to be able to set things up from the start. More basic knowledge of lighting theory is encouraged for users to be able to know how to set up lights.</p>
+          <p>> <b>Intermediate knowledge of how to use computers and applications</b>— required by all users in order to navigate and use the application's tools to its full capacity.</p>
+        </p>
+        <p>Finding the required skills especially the 3D artists and programmers might be a challenge, as this app sounds quite complex to program, as well as the quality intended for the models are quite high — the artists have to show their thorough understanding of anatomy and some aspects of art theory, so finding the right artists to add their work in may be costly to devs, or they may not have enough time to specifically create models for just this one app.
+        </p>
+
+
+
+        <!--- link block --->
+
+            <!--- dropdown two --->
+            <!--
+
+           <li class="drop-wrap">
+                <a class="dropbutton">dropdown title<i data-feather="chevron-down"></i></a>
+                    <div class="dropdown">
+                        <a href="/">dropdown link</a>
+                        <a href="/">dropdown link</a>
+                    </div>
+            </li>
+
+            <li><a href="/">link</a></li>
+            <li><a href="/">link</a></li>
+          -->
+
+        </div>
+
+    </article>
+
+    <!----- ================================
+
+        END OF TAG BOX TWO
+
+    ====================================== ----->
+    <!----- ================================
+
+        START OF TAG BOX THREE
+    ====================================== ----->
+    <article>
+
+    <div class="title">Outcome</div>
+    <p>If this project is successful, the outcome would give birth to a powerful reference tool that should be sought out by all artists and students studying in the fields of art. The results of whether this solves the original problem of increasing an artist's workflow and reducing time spent on finding references is dependent on the user themselves. Since every individual works in different ways - they have their preferred workflows, and may not be opened/fussed to learning and introducing a new segment into it,  it's hard to determine how effective this app will be as a whole. As there is a small learning curve required to use the app itself, some individuals may not be willing to go through with learning how to use it. However if this app becomes a recommended tool by artists I believe it has the opportunity to grow into something more than just a 3D-mannequin-posing app but may even be able to support artists financially by uploading their models into this app.
+  </p>
+
+  </article>
+  <!----- ================================
+
+      END OF TAG BOX THREE
+
+  ====================================== ----->
+
+    <!----- MAKE SURE YOU ADD ANY ADDITIONAL TAG BOXES ABOVE THIS LINE. STOP EDITING AFTER HERE AND DO NOT TOUCH ANY OF THE SCRIPTS BELOW. ----->
+
+    <div id="k" class="upper"><a href="https://seyche.tumblr.com/" title="narcissus">page by seyche</a></div>
+
+</section>
+
+<!----- TOOLTIPS ----->
+
+<script src="https://unpkg.com/popper.js@1"></script>
+<script src="https://unpkg.com/tippy.js@5/dist/tippy-bundle.iife.js"></script>
+
+<script>
+
+$(document).ready(function() {
+
+    /// DROPDOWNS
+
+   $('.dropdown').hide();
+   $('.dropbutton').click(function(event) {
+      $(this).closest('.drop-wrap').find('.dropdown').slideToggle(500)
+      event.preventDefault();
+      $(this).toggleClass('upside', 500);
+   });
+
+   /// SLIDE-IN MOBILE SIDEBAR
+
+   $('.menu-button').click(function(){
+        $('#sidebar').addClass('show', 700);
+    });
+
+    $('.close').click(function(){
+        $('#sidebar').removeClass('show', 700);
+    });
+
+    /// TOOLTIPS
+
+    tippy('[title]', {
+        theme: 'custom',
+        arrow: false,
+        followCursor: true,
+        delay: 100,
+        placement: 'bottom-start',
+        zIndex: 9999999999,
+        maxWidth: 400,
+
+        content(reference) {
+          const title = reference.getAttribute('title');
+          reference.removeAttribute('title');
+          return title;
+        },
+    });
+});
+
+feather.replace()
+
+</script>
+
+</body>
+</html>

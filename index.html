@@ -32,12 +32,15 @@
 /*----- START EDITING HERE -----*/
 
 /*----- VARIABLES: EDIT THIS SECTION!!!! -----*/
+npm install feather-icons{
+
+}
 
 :root {
 
     /*----- colours -----*/
 
-    --background: #89cff0;
+    --background: #a2a2d0;
     --content-background: #fff;
     --text: #575757;
     --links: #8c8c8c;
@@ -70,9 +73,9 @@
 
     --quote-box: block;
     --social-media-box: none;
-    --skills-box: block;
-    --favourites-box: block;
-    --aesthetics-box: block;
+    --skills-box: none;
+    --favourites-box: none;
+    --aesthetics-box: none;
 
 }
 
@@ -572,6 +575,7 @@ article .title {
     justify-content: space-between;
     border-radius: 5px;
     overflow: hidden;
+
 }
 
 .moodboard img {
@@ -604,6 +608,7 @@ article .title {
 #col-2 {background-color: var(--fave-colour-two);}
 #col-3 {background-color: var(--fave-colour-three);}
 #col-4 {background-color: var(--fave-colour-four);}
+
 
 /*---- MOBILE HEADER -----*/
 
@@ -752,20 +757,6 @@ article .title {
 
 <!----- HEADER FOR MOBILE LAYOUT: do not edit this section ----->
 
-<header id="mobile-header">
-    <div id="mobile-flex">
-        <div id="mobile-left">
-            <div class="menu-button" title="open menu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></div>
-            <div class="subtitle">about</div>
-        </div>
-        <div class="mobile-controls">
-            <a href="https://www.tumblr.com/follow/{Name}" title="follow"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus-square"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line></svg></a>
-            <a href="https://www.tumblr.com/message/{Name}" title="message">
-<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg></a>
-            <a href="https://www.tumblr.com/dashboard" title="dashboard"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-compass"><circle cx="12" cy="12" r="10"></circle><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon></svg></a>
-        </div>
-    </div>
-</header>
 
 <!----- ================================
 
@@ -798,20 +789,32 @@ article .title {
 
     <nav class="upper">
 
-        <li><a href="/">
+        <li><a href="index.html">
             <i data-feather="home"></i>
-            <span class="nav-txt">Main</span>
+            <svg class="feather">
+  <use xlink:href="path/to/dist/feather-sprite.svg#circle"/>
+</svg>
+            <span class="nav-txt">Home</span>
         </a></li>
-        <li><a href="/ask">
+        <li><a href="jobs.html">
             <i data-feather="briefcase"></i>
+            <svg class="feather">
+  <use xlink:href="path/to/dist/feather-sprite.svg#circle"/>
+</svg>
             <span class="nav-txt">Ideal Job</span>
         </a></li>
-        <li><a href="/archive">
+        <li><a href="tests.html">
             <i data-feather="star"></i>
+            <svg class="feather">
+  <use xlink:href="path/to/dist/feather-sprite.svg#circle"/>
+</svg>
             <span class="nav-txt">Tests</span>
         </a></li>
-        <li><a href="/">
+        <li><a href="project.html">
             <i data-feather="file-text"></i>
+            <svg class="feather">
+  <use xlink:href="path/to/dist/feather-sprite.svg#circle"/>
+</svg>
             <span class="nav-txt">Project Idea</span>
         </a></li>
 
@@ -907,13 +910,17 @@ article .title {
             <article class="summary">
 
                 <div class="subtitle">about me</div>
-
-                <p>
-                    Write your description here. Don't forget to use < p> < /p> (without the spaces) to separate paragraphs. Here's what <b>bold</b>, <i>italicized</i>, and <u>underlined</u> text looks like.
+                <p> Hey there call me Phannavy! I'm currently studying BA of I.T at RMIT. Although I have previously completed a course in Game Development as a Game Artist.
                 </p>
 
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    <b>Hobbies:</b><br> • Drawing; I mainly do digital illustrations<br>• Watching anime/movies (favourites: HxH, Berserk)<br>• Gaming<br>• Reading manga/light novels</p>
+                </p>
+                <p>
+                    <b>Languages:</b><br> • English<br>• Japanese(written/conversational)<br>• Khmer</p>
+                </p>
+                <p>
+                  <b>Some of my Favourite Games are:</b><br>• FFXIV<br>• Kingdom Hearts<br>• The Witcher 3</br>
                 </p>
 
             </article>
@@ -932,14 +939,34 @@ article .title {
 
         <article id="quote">
 
-            <b>DO i want to add a quote here? Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</b>
+              <div class="subtitle">Some of my Artworks</div>
 
-            <div class="upper">source</div>
+              <!-----
+
+              add the urls of four pictures below. if you add pictures larger than 120px x 120px or pictures that don't have a square ratio, the images will resize without being distorted or stretched. the colours of your favourite colours can be added in the css variables at the top of the theme.
+
+              ----->
+
+              <div class="moodboard">
+                  <img src="https://pbs.twimg.com/media/D5814fBUIAASEkV?format=jpg&name=medium"/>
+                  <img src="https://pbs.twimg.com/media/EX_E-3YUMAI8ivq?format=jpg&name=medium"/>
+                  <img src="https://pbs.twimg.com/media/DwCcnwiU0AAoDpz?format=jpg&name=4096x4096"/>
+                  <img src="https://pbs.twimg.com/media/D3DF48bUwAAVPr0?format=jpg&name=medium"/>
+              </div>
 
         </article>
 
         <!----- END OF QUOTE BOX ----->
+        <!--- disabled//
 
+        <article id=“Games”>
+
+     <div class=“subtitle”>Games</div>
+
+     <p> (fill in own content here)</p>
+
+</article>
+  <!--- ^^^^ copy all that above
         <!----- ================================
 
             BEGINNING OF BOTTOM CONTENT
@@ -972,44 +999,6 @@ article .title {
 
                         ----->
 
-                        <a href="/" title="@twitter">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-
-                        <a href="/" title="@instagram">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-
-                        <a href="/" title="@discord">
-                            <i class="fab fa-discord"></i>
-                        </a>
-
-                        <a href="/" title="@snapchat">
-                            <i class="fab fa-snapchat-ghost"></i>
-                        </a>
-
-                        <a href="/" title="@spotify">
-                            <i class="fab fa-spotify"></i>
-                        </a>
-
-                        <a href="/" title="@pinterest">
-                            <i class="fab fa-pinterest-p"></i>
-                        </a>
-
-                        <a href="/" title="@goodreads">
-                            <i class="fab fa-goodreads-g"></i>
-                        </a>
-
-                        <a href="/" title="@ko-fi">
-                            <i class="fas fa-mug-hot"></i>
-                        </a>
-
-                        <a href="/" title="@letterboxd">
-                            <i class="fas fa-ellipsis-h"></i>
-                        </a>
-
-                    </div>
-
                     <!--- end of social media links --->
 
                      <!-----
@@ -1030,32 +1019,6 @@ article .title {
                     add as many as you want.
 
                      ----->
-
-                    <!--- sideblog one --->
-
-                    <div class="sideblog">
-
-                        <div class="icon-gradient"><img src="https://via.placeholder.com/30x30.png"/></div>
-
-                        <div class="sideblog-desc">
-                            <b><a href="/">@username</a></b>
-                            <i>this is where the description is meant to be?</i>
-                        </div>
-
-                    </div>
-
-                    <!--- sideblog two --->
-
-                    <div class="sideblog">
-
-                        <div class="icon-gradient"><img src="https://via.placeholder.com/30x30.png"/></div>
-
-                        <div class="sideblog-desc">
-                            <b><a href="/">@username</a></b>
-                            <i>description</i>
-                        </div>
-
-                    </div>
 
                     <!-----
 
@@ -1151,7 +1114,7 @@ article .title {
 
                 <article id="aesthetics">
 
-                    <div class="subtitle">aesthetics</div>
+                    <div class="subtitle">Some of my Artworks</div>
 
                     <!-----
 
@@ -1160,10 +1123,10 @@ article .title {
                     ----->
 
                     <div class="moodboard">
-                        <img src="https://via.placeholder.com/120x120.png"/>
-                        <img src="https://via.placeholder.com/120x120.png"/>
-                        <img src="https://via.placeholder.com/120x120.png"/>
-                        <img src="https://via.placeholder.com/120x120.png"/>
+                        <img src="https://pbs.twimg.com/media/D5814fBUIAASEkV?format=jpg&name=medium"/>
+                        <img src="https://pbs.twimg.com/media/EX_E-3YUMAI8ivq?format=jpg&name=medium"/>
+                        <img src="https://pbs.twimg.com/media/DwCcnwiU0AAoDpz?format=jpg&name=4096x4096"/>
+                        <img src="https://pbs.twimg.com/media/D3DF48bUwAAVPr0?format=jpg&name=medium"/>
                     </div>
 
                     <!----- STOP EDITING AFTER HERE ----->
